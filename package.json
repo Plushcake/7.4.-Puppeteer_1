@@ -1,7 +1,6 @@
 {
   "name": "jsaqa_3_3",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "jest"
@@ -9,8 +8,19 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "jest": "^27.5.1",
-    "jest-puppeteer": "^6.1.1",
+    "jest-puppeteer": "^6.2.0",
     "puppeteer": "^13.7.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Plushcake/7.4.-Puppeteer_1.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Plushcake/7.4.-Puppeteer_1/issues"
+  },
+  "homepage": "https://github.com/Plushcake/7.4.-Puppeteer_1#readme",
+  "description": "",
+  "devDependencies": {
+    "jest": "^29.3.1"
   }
 }

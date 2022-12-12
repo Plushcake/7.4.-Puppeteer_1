@@ -41,7 +41,7 @@ describe("Github page tests", () => {
     expect(actual).toContain("Get started with Team");
   }, 45000);
 });
-describe("New Three test", () => {
+describe.only("New Three test", () => {
   beforeEach(async () => {
     await page.goto("https://github.com/security");
   });
@@ -60,14 +60,14 @@ describe("New Three test", () => {
       visible: true,
     });
     const actuals = await page.$eval(btnSelectors, (link) => link.textContent);
-    expect(actuals).toContain("Explore security at GitHub Universe");
+    expect(actuals).toContain("Explore GitHub Advanced Security");
   }, 45000);
 
-  //test("The h4 header content in security", async () => {
-  //const firstLinks = await page.$("div div p");
-  //await firstLinks.click();
-  //await page.waitForSelector("a");
-  //const title3 = await page.title();
-  //expect(title3).toEqual("GitHub Security · GitHub");
-  //}, 45000);
+  test("The title", async () => {
+    //const firstLinks = await page.$("div div p");
+    //await firstLinks.click();
+    //await page.waitForSelector("a");
+    const title3 = await page.title();
+    expect(title3).toEqual("GitHub Security · GitHub");
+  }, 45000);
 });
